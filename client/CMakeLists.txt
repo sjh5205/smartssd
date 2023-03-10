@@ -3,10 +3,11 @@ cmake_minimum_required(VERSION 3.0)
 project(compression-client)
 
 find_package(OpenCL REQUIRED)
+find_library(LIBSTDCXX NAMES libstdc++.so.6 HINTS /tools/Xilinx/Vitis/2021.2/lib/lnx64.o/Default REQUIRED)
 
 set(CMAKE_CXX_STANDARD 14)
-set(XILINX_XRT /opt/xilinx/xrt)
-set(XILINX_VITIS ${HOME}/xilinx/Vitis/2019.2)
+set(XILINX_XRT "$ENV{XILINX_XRT}")
+set(XILINX_VITIS "$ENV{XILINX_VITIS}")
 
 include_directories(${CMAKE_INSTALL_PREFIX}/include)
 include_directories(${OpenCL_INCLUDE_DIRS})

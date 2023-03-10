@@ -1,7 +1,7 @@
-#include <defns.h>
+#include "../include/defns.h"
 
 #include <boost/program_options.hpp>
-#include <lz4_p2p_comp.hpp>
+#include "../include/lz4_p2p_comp.hpp"
 #include <vector>
 
 #define MEMORY_SIZE 2U << 31
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
   vector<uint32_t> inSizeVec;
 
   for (unsigned i = 0; i < g_options.num_memory; i++) {
-    outVec.push_back(g_options.filename + "." + to_string(i));
+    outVec.push_back(g_options.filename + "." + "lz4");
 
     char *memory =
         static_cast<char *>(aligned_alloc(4096, g_options.memory_size));
@@ -71,10 +71,10 @@ int main(int argc, char *argv[]) {
                "Done ..."
             << std::endl;
   std::cout << "\n";
-  std::cout << "\x1B[36m[FPGA LZ4]\033[0m LZ4 P2P Compression Started ..."
+  std::cout << "\x1B[36m[FPGA LZ4]\033[0m LZ4 non-P2P Compression Started ..."
             << std::endl;
-  xlz.compress_in_line_multiple_files(inVec, outVec, inSizeVec, true);
+  xlz.compress_in_line_multiple_files(inVec, outVec, inSizeVec, false);
   std::cout << "\n\n";
-  std::cout << "\x1B[36m[FPGA LZ4]\033[0m LZ4 P2P Compression Done ..."
+  std::cout << "\x1B[36m[FPGA LZ4]\033[0m LZ4 non-P2P Compression Done ..."
             << std::endl;
 }
