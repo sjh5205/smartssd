@@ -48,10 +48,10 @@ RM = /tools/Xilinx/Vitis/2021.2/tps/lnx64/cmake-3.3.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /csd/smartssd
+CMAKE_SOURCE_DIR = /mnt/smartssd
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /csd/smartssd
+CMAKE_BINARY_DIR = /mnt/smartssd
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /csd/smartssd && $(CMAKE_COMMAND) -E cmake_progress_start /csd/smartssd/CMakeFiles /csd/smartssd/kernel/CMakeFiles/progress.marks
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /csd/smartssd/CMakeFiles 0
+	cd /mnt/smartssd && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/smartssd/CMakeFiles /mnt/smartssd/kernel/CMakeFiles/progress.marks
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/smartssd/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/clean
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/preinstall
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/preinstall
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /csd/smartssd && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/smartssd && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 kernel/CMakeFiles/compress.dir/rule:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/compress.dir/rule
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/compress.dir/rule
 .PHONY : kernel/CMakeFiles/compress.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ compress: kernel/CMakeFiles/compress.dir/rule
 
 # fast build rule for target.
 compress/fast:
-	cd /csd/smartssd && $(MAKE) -f kernel/CMakeFiles/compress.dir/build.make kernel/CMakeFiles/compress.dir/build
+	cd /mnt/smartssd && $(MAKE) -f kernel/CMakeFiles/compress.dir/build.make kernel/CMakeFiles/compress.dir/build
 .PHONY : compress/fast
 
 # Convenience name for target.
 kernel/CMakeFiles/xf_compress.dir/rule:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_compress.dir/rule
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_compress.dir/rule
 .PHONY : kernel/CMakeFiles/xf_compress.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ xf_compress: kernel/CMakeFiles/xf_compress.dir/rule
 
 # fast build rule for target.
 xf_compress/fast:
-	cd /csd/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_compress.dir/build.make kernel/CMakeFiles/xf_compress.dir/build
+	cd /mnt/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_compress.dir/build.make kernel/CMakeFiles/xf_compress.dir/build
 .PHONY : xf_compress/fast
 
 # Convenience name for target.
 kernel/CMakeFiles/xf_packer.dir/rule:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_packer.dir/rule
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_packer.dir/rule
 .PHONY : kernel/CMakeFiles/xf_packer.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ xf_packer: kernel/CMakeFiles/xf_packer.dir/rule
 
 # fast build rule for target.
 xf_packer/fast:
-	cd /csd/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_packer.dir/build.make kernel/CMakeFiles/xf_packer.dir/build
+	cd /mnt/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_packer.dir/build.make kernel/CMakeFiles/xf_packer.dir/build
 .PHONY : xf_packer/fast
 
 # Convenience name for target.
 kernel/CMakeFiles/xf_uncompress.dir/rule:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_uncompress.dir/rule
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_uncompress.dir/rule
 .PHONY : kernel/CMakeFiles/xf_uncompress.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ xf_uncompress: kernel/CMakeFiles/xf_uncompress.dir/rule
 
 # fast build rule for target.
 xf_uncompress/fast:
-	cd /csd/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_uncompress.dir/build.make kernel/CMakeFiles/xf_uncompress.dir/build
+	cd /mnt/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_uncompress.dir/build.make kernel/CMakeFiles/xf_uncompress.dir/build
 .PHONY : xf_uncompress/fast
 
 # Convenience name for target.
 kernel/CMakeFiles/xf_unpacker.dir/rule:
-	cd /csd/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_unpacker.dir/rule
+	cd /mnt/smartssd && $(MAKE) -f CMakeFiles/Makefile2 kernel/CMakeFiles/xf_unpacker.dir/rule
 .PHONY : kernel/CMakeFiles/xf_unpacker.dir/rule
 
 # Convenience name for target.
@@ -226,7 +226,7 @@ xf_unpacker: kernel/CMakeFiles/xf_unpacker.dir/rule
 
 # fast build rule for target.
 xf_unpacker/fast:
-	cd /csd/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_unpacker.dir/build.make kernel/CMakeFiles/xf_unpacker.dir/build
+	cd /mnt/smartssd && $(MAKE) -f kernel/CMakeFiles/xf_unpacker.dir/build.make kernel/CMakeFiles/xf_unpacker.dir/build
 .PHONY : xf_unpacker/fast
 
 # Help Target
@@ -257,6 +257,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /csd/smartssd && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/smartssd && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

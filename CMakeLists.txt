@@ -10,6 +10,6 @@ find_library(LIBSTDCXX NAMES libstdc++.so.6 HINTS /tools/Xilinx/Vitis/2021.2/lib
 add_compile_options(-g)
 add_compile_options(-Wall)
 
-#add_subdirectory(kernel)
+add_subdirectory(kernel)
 add_subdirectory(host)
 add_subdirectory(client)
