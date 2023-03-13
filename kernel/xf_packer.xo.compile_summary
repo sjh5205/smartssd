@@ -1,0 +1,236 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/smartssd/kernel/xf_packer.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec  1 00:06:12 2021",
+ "timestampMillis": "1638317172183",
+ "buildStep": {
+  "cmdId": "98d3de99-d135-47f0-b0f2-711dd36f0cce",
+  "name": "v++",
+  "logFile": "/mnt/smartssd/kernel/_x/xf_packer/xf_packer.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform /opt/xilinx/xrt/../platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1/xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm -k xilLz4Packer -I/mnt/smartssd/kernel/include/ -o xf_packer.xo -c /mnt/smartssd/kernel/src/lz4_packer_mm.cpp ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "/opt/xilinx/xrt/../platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1/xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm",
+   "-k",
+   "xilLz4Packer",
+   "-I/mnt/smartssd/kernel/include/",
+   "-o",
+   "xf_packer.xo",
+   "-c",
+   "/mnt/smartssd/kernel/src/lz4_packer_mm.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/smartssd/kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:06:12 2021",
+ "timestampMillis": "1638317172183",
+ "status": {
+  "cmdId": "98d3de99-d135-47f0-b0f2-711dd36f0cce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Dec  1 00:06:17 2021",
+ "timestampMillis": "1638317177546",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "xilLz4Packer",
+     "file": "/mnt/smartssd/kernel/xf_packer.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/smartssd/kernel/src/lz4_packer_mm.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec  1 00:06:17 2021",
+ "timestampMillis": "1638317177550",
+ "buildStep": {
+  "cmdId": "06e401d5-ff4e-4d41-adaa-a7cc8af13eaf",
+  "name": "vitis_hls",
+  "logFile": "/mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/vitis_hls.log",
+  "commandLine": "vitis_hls -f /mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/xilLz4Packer.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/xilLz4Packer.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/smartssd/kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:06:17 2021",
+ "timestampMillis": "1638317177550",
+ "status": {
+  "cmdId": "06e401d5-ff4e-4d41-adaa-a7cc8af13eaf",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225497",
+ "status": {
+  "cmdId": "06e401d5-ff4e-4d41-adaa-a7cc8af13eaf",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225510",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/xilLz4Packer/solution/.autopilot/db/xilLz4Packer.design.xml",
+  "name": "xilLz4Packer",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225511",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/xilLz4Packer/solution/.autopilot/db/.message_syn.xml",
+  "name": "xilLz4Packer",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225511",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_packer/hls_reports/xilLz4Packer_csynth.rpt",
+  "name": "xilLz4Packer",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225511",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_packer/xilLz4Packer/xilLz4Packer/solution/syn/report/xilLz4Packer_csynth.xml",
+  "name": "xilLz4Packer",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225521",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_packer/system_estimate_xf_packer.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225790",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_packer/v++_compile_xf_packer_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225790",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/v++_compile_xf_packer_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:07:05 2021",
+ "timestampMillis": "1638317225791",
+ "status": {
+  "cmdId": "98d3de99-d135-47f0-b0f2-711dd36f0cce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

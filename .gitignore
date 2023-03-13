@@ -31,9 +31,15 @@ build
 *.exe
 *.out
 *.app
+
 # CMake Caches
 .Makefiles/*
 CMakeFiles
 *.cmake
 Makefile
 CMakeCache*
+
+#Vitis Cache
+kernel/_x
+kernel/.ipcache
+*.log

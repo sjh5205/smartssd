@@ -1,0 +1,236 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/smartssd/kernel/xf_uncompress.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec  1 00:07:17 2021",
+ "timestampMillis": "1638317237542",
+ "buildStep": {
+  "cmdId": "98ae33f3-1221-4a82-a28c-6012d89aa493",
+  "name": "v++",
+  "logFile": "/mnt/smartssd/kernel/_x/xf_uncompress/xf_uncompress.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2021.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform /opt/xilinx/xrt/../platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1/xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm -k xilLz4P2PDecompress -I/mnt/smartssd/kernel/include/ -o xf_uncompress.xo -c /mnt/smartssd/kernel/src/lz4_p2p_decompress_kernel.cpp ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "/opt/xilinx/xrt/../platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1/xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm",
+   "-k",
+   "xilLz4P2PDecompress",
+   "-I/mnt/smartssd/kernel/include/",
+   "-o",
+   "xf_uncompress.xo",
+   "-c",
+   "/mnt/smartssd/kernel/src/lz4_p2p_decompress_kernel.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/smartssd/kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:07:17 2021",
+ "timestampMillis": "1638317237542",
+ "status": {
+  "cmdId": "98ae33f3-1221-4a82-a28c-6012d89aa493",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Dec  1 00:07:22 2021",
+ "timestampMillis": "1638317242907",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u2_gen3x4_xdma_gc_2_202110_1.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u2_gen3x4_xdma_gc_2_202110_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "xilLz4P2PDecompress",
+     "file": "/mnt/smartssd/kernel/xf_uncompress.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/smartssd/kernel/src/lz4_p2p_decompress_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.2. SW Build 3363252 on 2021-10-14-04:41:01"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Dec  1 00:07:22 2021",
+ "timestampMillis": "1638317242911",
+ "buildStep": {
+  "cmdId": "582f4e90-90cb-4712-9471-3295551e883c",
+  "name": "vitis_hls",
+  "logFile": "/mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/vitis_hls.log",
+  "commandLine": "vitis_hls -f /mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/xilLz4P2PDecompress.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/xilLz4P2PDecompress.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/smartssd/kernel"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:07:22 2021",
+ "timestampMillis": "1638317242912",
+ "status": {
+  "cmdId": "582f4e90-90cb-4712-9471-3295551e883c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348138",
+ "status": {
+  "cmdId": "582f4e90-90cb-4712-9471-3295551e883c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348183",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/xilLz4P2PDecompress/solution/.autopilot/db/xilLz4P2PDecompress.design.xml",
+  "name": "xilLz4P2PDecompress",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348183",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/xilLz4P2PDecompress/solution/.autopilot/db/.message_syn.xml",
+  "name": "xilLz4P2PDecompress",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348184",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_uncompress/hls_reports/xilLz4P2PDecompress_csynth.rpt",
+  "name": "xilLz4P2PDecompress",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348184",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/xf_uncompress/xilLz4P2PDecompress/xilLz4P2PDecompress/solution/syn/report/xilLz4P2PDecompress_csynth.xml",
+  "name": "xilLz4P2PDecompress",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348212",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_uncompress/system_estimate_xf_uncompress.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348880",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/reports/xf_uncompress/v++_compile_xf_uncompress_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348881",
+ "report": {
+  "path": "/mnt/smartssd/kernel/_x/v++_compile_xf_uncompress_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec  1 00:09:08 2021",
+ "timestampMillis": "1638317348881",
+ "status": {
+  "cmdId": "98ae33f3-1221-4a82-a28c-6012d89aa493",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
